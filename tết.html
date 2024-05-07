@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tỏ tình</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #loveButton, #noLoveButton {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tôi muốn nói với bạn rằng...</h1>
+    <p>Em là người yêu của anh!</p>
+    <button id="loveButton">Đồng ý</button>
+    <button id="noLoveButton">Không đồng ý</button>
+    <script>
+        const loveButton = document.getElementById("loveButton");
+        const noLoveButton = document.getElementById("noLoveButton");
+
+        noLoveButton.addEventListener("click", function() {
+            // Đổi vị trí của hai nút
+            const temp = loveButton.innerHTML;
+            loveButton.innerHTML = noLoveButton.innerHTML;
+            noLoveButton.innerHTML = temp;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+th,td{
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 2px solid rgb(251, 249, 249);
+}
+table{
+    text-align:center;
+    width: 80%;
+}
+
+th:nth-child(even){
+    background-color: rgb(233, 159, 89);
+}
+td:nth-child(3){
+    background-color: blueviolet;
+}
+
+td,th{
+    background-color: rgb(46, 189, 75);
+}
+/*chỉ định màu khi chuột di chuyển qua */
+tr:hover{
+    background-color: rgb(226, 18, 18);
+}
